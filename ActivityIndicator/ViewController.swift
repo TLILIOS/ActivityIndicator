@@ -6,12 +6,15 @@
 //
 
 import UIKit
-
+import NVActivityIndicatorView
 class ViewController: UIViewController {
 
+    @IBOutlet weak var indicatorView: NVActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        indicatorView.type = .ballBeat
+        indicatorView.stopAnimating()
+        indicatorView.color = .red
     }
 
 
